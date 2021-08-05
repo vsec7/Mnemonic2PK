@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mnemonic to PrivateKey Converter</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' />
+</head>
+<body>
+  <div class="container">
+    <h1>Mnemonic to PrivateKey Converter</h1>
+
+    <div class="row">
+      <div class="col-md-5">
+        <form method="post" action="/result">
+          <div class="form-group">
+            <label for="nameInput">Mnemonic</label>
+            <textarea class="form-control" id="nameInput" placeholder="Enter your Mnemonic" name="mnemonic"></textarea>
+          </div>
+          <button type="submit" class="btn btn-default">Convert to PrivateKey</button>
+        </form>
+
+        <hr>
+
+        <div class="col-md-5">
+          2021 Created by <a href="https://github.com/vsec7"> Viloid </a>
+        </div>
+      </div>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

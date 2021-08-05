@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mnemonic to PrivateKey</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' />
+</head>
+<body>
+  <div class="container">
+    <h1>Mnemonic to PrivateKey</h1>
+
+      <b>Result: </b>
+      <br>
+      Address: <b><%= query.addr %> </b>
+      <br>
+      PrivateKey: <input id="pk" value="<%= query.pk %>">
+      <input onclick="copyPK();" class="btn btn-sm btn-outline-success" type=button value="Copy PrivateKey">
+
+      <hr>
+
+      <div class="col-md-5">
+        2021 Created by <a href="https://github.com/vsec7"> Viloid </a>
+      </div>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    function copyPK(){
+      var copyText = document.getElementById("pk").select();
+      document.execCommand("Copy");
+      alert("PrivateKey Copied")
+    }
+  </script>
+</body>
+</html>
